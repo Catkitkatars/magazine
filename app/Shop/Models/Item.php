@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Shop;
+namespace App\Shop\Models;
+
 
 class Item
 {
@@ -13,10 +14,10 @@ class Item
 
     public function DTO(): ItemDTO {
         return new ItemDTO(
-            $id,
-            $title,
-            $description,
-            $price
+            $this->id,
+            $this->title,
+            $this->description,
+            $this->price
         );
     }
 }

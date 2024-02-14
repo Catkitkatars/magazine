@@ -1,9 +1,9 @@
 <?php 
 
-namespace App\Shop; 
+namespace App\Shop\Models; 
 
 
-class ProductDTO {
+class ItemDTO {
 
     public function __construct(
         public int $id,
